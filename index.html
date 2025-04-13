@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Сайт модера tvo1_roma</title>
   <style>
     body {
@@ -25,7 +25,7 @@
       background-color: rgba(0, 0, 0, 0.7);
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-      max-width: 900px;
+      max-width: 800px;
       width: 100%;
     }
 
@@ -65,42 +65,8 @@
       font-size: 1.2rem;
     }
 
-    .gallery {
-      margin-top: 30px;
-    }
-
-    .gallery h3 {
-      color: #fff;
-      margin-bottom: 15px;
-    }
-
-    .gallery-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .gallery-images img {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
-      border: 2px solid #444;
-      filter: brightness(40%) blur(1px);
-      transform: scale(0.95);
-      transition: all 0.4s ease;
-      opacity: 0.6;
-    }
-
-    .gallery-images img:hover {
-      filter: brightness(100%) blur(0);
-      transform: scale(1.05);
-      opacity: 1;
-      cursor: pointer;
-    }
-
     .back-link {
-      margin-top: 30px;
+      margin-top: 20px;
       display: block;
       color: #fff;
       font-weight: bold;
@@ -112,6 +78,24 @@
       color: #ccc;
     }
 
+    /* Эффект появления текста */
+    .gallery {
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    .placeholder {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      color: #888;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    .gallery:hover .placeholder {
+      opacity: 1;
+    }
+
     body.loaded {
       opacity: 1;
     }
@@ -120,27 +104,21 @@
 <body class="loaded">
   <div class="container">
     <header>
-      <img src="maxresdefault.jpg" alt="Фото tvo1_roma">
       <h1>tvo1_roma</h1>
     </header>
 
     <div class="mod-info">
       <h2>О модераторе:</h2>
-      <p>Тихий наблюдатель, который замечает всё.<br>
-         Иногда появляется внезапно и выносит мутом — даже если ты думал, что его нет онлайн.</p>
+      <p>Тихий, но видит всё... хотя иногда может быть неожиданно громким 😄</p>
     </div>
 
     <div class="gallery">
       <h3>Галерея tvo1_roma:</h3>
-      <div class="gallery-images">
-        <img src="photo4.jpg" alt="фото 1">
-        <img src="photo5.jpg" alt="фото 2">
-        <img src="photo6.jpg" alt="фото 3">
-        <!-- можно добавить ещё -->
-      </div>
+      <p class="placeholder">На tvo1_roma пока что ничего нет либо я не видел :)</p>
     </div>
 
     <a href="https://b1ologist.github.io/ech0noway/" class="back-link">Вернуться на главный сайт</a>
   </div>
 </body>
 </html>
+
