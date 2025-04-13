@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт модера tvo1_roma</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+      transition: opacity 1s ease-in;
+    }
+
+    .container {
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      max-width: 900px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 1rem;
+    }
+
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #bbb;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .mod-info {
+      margin-top: 20px;
+    }
+
+    .mod-info h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .mod-info p {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+
+    .gallery {
+      margin-top: 30px;
+    }
+
+    .gallery h3 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery-images img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #444;
+      filter: brightness(40%) blur(1px);
+      transform: scale(0.95);
+      transition: all 0.4s ease;
+      opacity: 0.6;
+    }
+
+    .gallery-images img:hover {
+      filter: brightness(100%) blur(0);
+      transform: scale(1.05);
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .back-link {
+      margin-top: 30px;
+      display: block;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .back-link:hover {
+      color: #ccc;
+    }
+
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="loaded">
+  <div class="container">
+    <header>
+      <img src="tvo1_photo.png" alt="Фото tvo1_roma">
+      <h1>tvo1_roma</h1>
+    </header>
+
+    <div class="mod-info">
+      <h2>О модераторе:</h2>
+      <p>Тихий наблюдатель, который замечает всё.<br>
+         Иногда появляется внезапно и выносит мутом — даже если ты думал, что его нет онлайн.</p>
+    </div>
+
+    <div class="gallery">
+      <h3>Галерея tvo1_roma:</h3>
+      <div class="gallery-images">
+        <img src="photo4.jpg" alt="фото 1">
+        <img src="photo5.jpg" alt="фото 2">
+        <img src="photo6.jpg" alt="фото 3">
+        <!-- можно добавить ещё -->
+      </div>
+    </div>
+
+    <a href="https://b1ologist.github.io/ech0noway/" class="back-link">Вернуться на главный сайт</a>
+  </div>
+</body>
+</html>
